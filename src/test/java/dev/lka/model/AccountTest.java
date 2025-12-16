@@ -69,12 +69,15 @@ class AccountTest {
 
     @Test
     void testDepositZeroAmountThrowsException() {
-        assertThrows(CustomException.class, () -> account.deposit(0));
+        CustomException exception = assertThrows(CustomException.class, () -> account.deposit(0));
+        assertEquals("Deposit amount must be positive", exception.getMessage());
     }
 
     @Test
     void testDepositNegativeAmountThrowsException() {
-        assertThrows(CustomException.class, () -> account.deposit(-100));
+        CustomException exception = assertThrows(CustomException.class, () -> account.deposit(-100));
+
+        assertEquals("Deposit amount must be positive", exception.getMessage());
     }
 
     @Test
@@ -103,19 +106,25 @@ class AccountTest {
     @Test
     void testWithdrawZeroAmountThrowsException() {
         account.deposit(1000);
-        assertThrows(CustomException.class, () -> account.withdraw(0));
+        CustomException exception = assertThrows(CustomException.class, () -> account.withdraw(0));
+
+        assertEquals("Withdrawal amount must be positive", exception.getMessage());
     }
 
     @Test
     void testWithdrawNegativeAmountThrowsException() {
         account.deposit(1000);
-        assertThrows(CustomException.class, () -> account.withdraw(-100));
+        CustomException exception = assertThrows(CustomException.class, () -> account.withdraw(-100));
+
+        assertEquals("Withdrawal amount must be positive", exception.getMessage());
     }
 
     @Test
     void testWithdrawInsufficientBalanceThrowsException() {
         account.deposit(100);
-        assertThrows(CustomException.class, () -> account.withdraw(200));
+        CustomException exception = assertThrows(CustomException.class, () -> account.withdraw(200));
+
+        assertEquals("Insufficient balance", exception.getMessage());
     }
 
     @Test

@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="256a9937-62ab-49c3-aca6-4723770dfdba" name="Changes" comment="" />
+    <list default="true" id="256a9937-62ab-49c3-aca6-4723770dfdba" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dev/lka/model/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/lka/model/AccountTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,6 +51,11 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "JUnit.AccountTest.executor": "Run",
+    "JUnit.AccountTest.testDepositNegativeAmountThrowsException.executor": "Run",
+    "JUnit.AccountTest.testDepositZeroAmountThrowsException.executor": "Run",
+    "JUnit.AccountTest.testStatementOrder.executor": "Debug",
+    "JUnit.AccountTest.testWithdrawNegativeAmountThrowsException.executor": "Run",
+    "JUnit.AccountTest.testWithdrawZeroAmountThrowsException.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -63,19 +71,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.AccountTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dev.lka.Main" />
-      <module name="banking-service-test-1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dev.lka.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="banking-service-test-1" />
       <extension name="coverage">
@@ -91,7 +86,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTest.testStatementOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AccountTest.testDepositNegativeAmountThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="banking-service-test-1" />
       <extension name="coverage">
         <pattern>
@@ -101,7 +96,55 @@
       </extension>
       <option name="PACKAGE_NAME" value="dev.lka.model" />
       <option name="MAIN_CLASS_NAME" value="dev.lka.model.AccountTest" />
-      <option name="METHOD_NAME" value="testStatementOrder" />
+      <option name="METHOD_NAME" value="testDepositNegativeAmountThrowsException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountTest.testDepositZeroAmountThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="banking-service-test-1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.lka.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.lka.model" />
+      <option name="MAIN_CLASS_NAME" value="dev.lka.model.AccountTest" />
+      <option name="METHOD_NAME" value="testDepositZeroAmountThrowsException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountTest.testWithdrawNegativeAmountThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="banking-service-test-1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.lka.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.lka.model" />
+      <option name="MAIN_CLASS_NAME" value="dev.lka.model.AccountTest" />
+      <option name="METHOD_NAME" value="testWithdrawNegativeAmountThrowsException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountTest.testWithdrawZeroAmountThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="banking-service-test-1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.lka.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.lka.model" />
+      <option name="MAIN_CLASS_NAME" value="dev.lka.model.AccountTest" />
+      <option name="METHOD_NAME" value="testWithdrawZeroAmountThrowsException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -110,8 +153,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.AccountTest" />
-        <item itemvalue="JUnit.AccountTest.testStatementOrder" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.AccountTest.testWithdrawNegativeAmountThrowsException" />
+        <item itemvalue="JUnit.AccountTest.testWithdrawZeroAmountThrowsException" />
+        <item itemvalue="JUnit.AccountTest.testDepositNegativeAmountThrowsException" />
+        <item itemvalue="JUnit.AccountTest.testDepositZeroAmountThrowsException" />
       </list>
     </recent_temporary>
   </component>
