@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="256a9937-62ab-49c3-aca6-4723770dfdba" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dev/lka/model/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/lka/model/AccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dev/lka/model/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dev/lka/service/AccountTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,8 +78,8 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dev.lka.model" />
-      <option name="MAIN_CLASS_NAME" value="dev.lka.model.AccountTest" />
+      <option name="PACKAGE_NAME" value="dev.lka.service" />
+      <option name="MAIN_CLASS_NAME" value="dev.lka.service.AccountTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -90,12 +89,12 @@
       <module name="banking-service-test-1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dev.lka.model.*" />
+          <option name="PATTERN" value="dev.lka.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dev.lka.model" />
-      <option name="MAIN_CLASS_NAME" value="dev.lka.model.AccountTest" />
+      <option name="PACKAGE_NAME" value="dev.lka.service" />
+      <option name="MAIN_CLASS_NAME" value="dev.lka.service.AccountTest" />
       <option name="METHOD_NAME" value="testDepositNegativeAmountThrowsException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -106,12 +105,12 @@
       <module name="banking-service-test-1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dev.lka.model.*" />
+          <option name="PATTERN" value="dev.lka.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dev.lka.model" />
-      <option name="MAIN_CLASS_NAME" value="dev.lka.model.AccountTest" />
+      <option name="PACKAGE_NAME" value="dev.lka.service" />
+      <option name="MAIN_CLASS_NAME" value="dev.lka.service.AccountTest" />
       <option name="METHOD_NAME" value="testDepositZeroAmountThrowsException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -122,12 +121,12 @@
       <module name="banking-service-test-1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dev.lka.model.*" />
+          <option name="PATTERN" value="dev.lka.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dev.lka.model" />
-      <option name="MAIN_CLASS_NAME" value="dev.lka.model.AccountTest" />
+      <option name="PACKAGE_NAME" value="dev.lka.service" />
+      <option name="MAIN_CLASS_NAME" value="dev.lka.service.AccountTest" />
       <option name="METHOD_NAME" value="testWithdrawNegativeAmountThrowsException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -138,12 +137,12 @@
       <module name="banking-service-test-1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dev.lka.model.*" />
+          <option name="PATTERN" value="dev.lka.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="dev.lka.model" />
-      <option name="MAIN_CLASS_NAME" value="dev.lka.model.AccountTest" />
+      <option name="PACKAGE_NAME" value="dev.lka.service" />
+      <option name="MAIN_CLASS_NAME" value="dev.lka.service.AccountTest" />
       <option name="METHOD_NAME" value="testWithdrawZeroAmountThrowsException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">

@@ -1,4 +1,4 @@
-package dev.lka.model;
+package dev.lka.service;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -9,7 +9,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import dev.lka.service.Account;
+import dev.lka.model.Transaction;
+import dev.lka.model.TransactionType;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -64,7 +66,7 @@ class AccountTest {
         assertEquals(1, transactions.size());
         assertEquals("15-05-2023", transactions.get(0).date());
         assertEquals(500, transactions.get(0).amount());
-        assertEquals(TransactionType.DEPOSIT, transactions.get(0).type());
+        Assertions.assertEquals(TransactionType.DEPOSIT, transactions.get(0).type());
     }
 
     @Test
