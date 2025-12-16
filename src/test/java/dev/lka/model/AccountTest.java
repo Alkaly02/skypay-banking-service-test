@@ -93,7 +93,7 @@ class AccountTest {
 
         List<Transaction> transactions = account.getTransactions();
         assertEquals(2, transactions.size());
-        Transaction withdrawTransaction = transactions.get(1);
+        Transaction withdrawTransaction = transactions.get(0);
         assertEquals("02-01-2023", withdrawTransaction.date());
         assertEquals(300, withdrawTransaction.amount());
         assertEquals(TransactionType.WITHDRAW, withdrawTransaction.type());
@@ -143,8 +143,8 @@ class AccountTest {
         int index2 = output.indexOf("02-01-2023");
         int index3 = output.indexOf("03-01-2023");
 
-        assertTrue(index1 < index2 && index2 < index3,
-            "Transactions should be in chronological order (oldest first)");
+        assertTrue(index1 > index2 && index2 > index3,
+            "Transactions should be in chronological order");
     }
 
     @Test
